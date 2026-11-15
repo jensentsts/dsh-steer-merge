@@ -1,0 +1,9 @@
+- id: sessions
+  name: '@deepseek-ai/dsh-session'
+- id: projections
+  name: '@deepseek-ai/dsh-session-projection'
+- id: agents
+  name: '@deepseek-ai/dsh-agent'
+- id: dsh-steer-merge
+  name: ../../index.mjs
+  config: {}

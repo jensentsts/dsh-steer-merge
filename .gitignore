@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.cordis/
+.test-output/
+coverage/
+*.log
+.env
+.env.*

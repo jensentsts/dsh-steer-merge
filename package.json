@@ -1,0 +1,46 @@
+{
+  "name": "dsh-steer-merge",
+  "version": "0.1.0",
+  "description": "Collect concurrently pending DSH steering messages at a native step boundary",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./index.mjs",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "engines": {
+    "node": ">=24.9",
+    "dsh": ">=0.2.2-rc.1 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*",
+    "@deepseek-ai/schemastery": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensentsts/dsh-steer-merge.git"
+  },
+  "homepage": "https://github.com/jensentsts/dsh-steer-merge#readme",
+  "bugs": {
+    "url": "https://github.com/jensentsts/dsh-steer-merge/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "ai-agent"
+  ]
+}
